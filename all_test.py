@@ -68,6 +68,8 @@ if __name__ == "__main__":
     filename = 'E:\\webTest\\report\\'+now+'result.html'
     fp = file(filename, 'wb')
 
+    print alltestnames
+
     runner =HTMLTestRunner.HTMLTestRunner(
         stream=fp,
         title=u'自动化测试报告',
